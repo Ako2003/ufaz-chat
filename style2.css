@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    padding: 0 10px;
+}
+.topnav{
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+.topnav a {
+    float: left;
+    color: rgb(109, 109, 109);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+  
+.topnav a:hover {
+    color: rgb(36, 36, 36);
+}
+  
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+#follow{
+    color: rgb(122, 122, 122);
+    margin-left: 200px;
+}
+#follow:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px; 
+    /* background: #fff; */
+    /* border-radius: 16px; */
+    /* box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5); */
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.users{
+    background: #fff;
+    border: rgb(190, 190, 190) 1px solid;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    padding: 10px 15px;
+}
+.users .content{
+    display: flex;
+    align-items: center;
+}
+.body .users .content{
+    background: #f7f7f7;
+}
+.body .users .content #profil_img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 10px;
+}
+.body .users .img img{
+    margin: 20px 20px;
+    object-fit: cover;
+    border-radius: 5%;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}
+#acc_img{
+    height: 105px;
+    width: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 10px;
+}
+.acc_page{
+    background-color: #f7f7f7;
+}
+
+.my-acc, .acc_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30% 0 0;
+    font-size: x-large;
+}
+.upload_file::-webkit-file-upload-button {
+    display: none;
+}
+
+.upload_file::before{
+    content: 'Share a photo';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.upload_file:hover::before {
+    border-color: black;
+}
+ .cupload_file:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.image{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    margin: 80px 40px 0 0;
+    border: rgb(199, 199, 199) 1px solid;
+}
+.images{
+    margin-left: auto;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 1600px;
+}
